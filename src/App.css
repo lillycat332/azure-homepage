@@ -1,3 +1,15 @@
+:root {
+	--bg: #f8f9fa;
+	--fg: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: #242936;
+		--fg: #CCCAC2;
+	}
+}
+
 .App {
   text-align: center;
 }
@@ -38,3 +50,6 @@
   left: 0;
 }
 
+.code {
+  font-family: 'SF Mono', SFMono-Regular, ui-monospace, 'DejaVu Sans Mono', Menlo, 'Cascadia Code', Consolas, monospace;
+}

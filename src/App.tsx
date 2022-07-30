@@ -1,30 +1,45 @@
 import React from 'react';
-import Particles from "react-tsparticles";
+import Tilt from 'react-parallax-tilt';
+import ReactFullpage from '@fullpage/react-fullpage';
 import './App.css';
+import Typewriter from 'typewriter-effect';
 
 const App = () => {
   return (
     <div className="App">
-      <h1>Hello world!</h1>
-      <Particles
-        params={{
-          fpsLimit: 60,
-          particles: {
-            color: {
-              value: "#000"
-            },
-            links: {
-              enable: true,
-              color: "#000",
-              distance: 150
-            },
-            move: {
-              enable: true
-            }
-          }
+      <ReactFullpage
+        //fullpage options
+        scrollingSpeed={1000} /* Options here */
+
+        render={({ state, fullpageApi }) => {
+          return (
+            <ReactFullpage.Wrapper>
+              <div className="section">
+                <Tilt>
+                  <h1 className="code">
+                    <Typewriter
+                      onInit={(typewriter) => {
+                        typewriter.typeString("Hello World~")
+                          .callFunction(() => {
+                            console.log("String typed out!");
+                          })
+                          .pauseFor(2500)
+                          .deleteAll()
+                          .typeString("Welcome to my page!")
+                          .start();
+                      }}
+                    />
+                  </h1>
+                </Tilt>
+              </div>
+              <div className="section">
+                <h1 className="code">Projects</h1>
+              </div>
+            </ReactFullpage.Wrapper>
+          );
         }}
       />
-    </div >
+    </div>
   );
 };
 
