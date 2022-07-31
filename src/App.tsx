@@ -5,6 +5,11 @@ import './App.css';
 import Typewriter from 'typewriter-effect';
 import Terminal from './components/Terminal';
 import 'rsuite/dist/rsuite.min.css';
+import { light } from 'ayu';
+
+const linkStyle: React.CSSProperties = {
+  color: light.syntax.tag.hex()
+}
 
 const App = () => {
   return (
@@ -43,7 +48,7 @@ const App = () => {
 
               <div className="section rosalia">
                 <div className="text-in-div">
-                  <h1 className="code"><a className="App-link" href="https://github.com/lillycat332/rosalia">Rosalia</a></h1>
+                  <h1 className="code"><a style={linkStyle} href="https://github.com/lillycat332/rosalia">Rosalia</a></h1>
                   <p className="code">
                     Rosalia is my programming language I am currently making in Swift.
                     It's a functional programming language with influence from Haskell and Swift.
@@ -53,7 +58,7 @@ const App = () => {
 
               <div className="section hspos">
                 <div className="text-in-div">
-                  <h1 className="code"><a className="App-link" href="https://github.com/lillycat332/hs-pos">hs-pos</a></h1>
+                  <h1 className="code"><a style={linkStyle} className="App-link" href="https://github.com/lillycat332/hs-pos">hs-pos</a></h1>
                   <p className="code text-in-div">
                     hs-pos is the backend to my final school project for CS.
                     It's a simple point-of-sale system with SQLite and Haskell.
@@ -63,7 +68,7 @@ const App = () => {
 
               <div className="section reactpos">
                 <div className="text-in-div">
-                  <h1 className="code"><a className="App-link" href="https://github.com/lillycat332/react-pos">react-pos</a></h1>
+                  <h1 className="code"><a style={linkStyle} className="App-link" href="https://github.com/lillycat332/react-pos">react-pos</a></h1>
                   <p className="code">
                     react-pos is the frontend to the aforementioned point of sale project,
                     written in React TypeScript.
@@ -73,7 +78,7 @@ const App = () => {
 
               <div className="section nitrogen">
                 <div className="text-in-div">
-                  <h1 className="code"><a className="App-link" href="https://github.com/lillycat332/NitrogenApp">Nitrogen</a></h1>
+                  <h1 className="code"><a style={linkStyle} className="App-link" href="https://github.com/lillycat332/NitrogenApp">Nitrogen</a></h1>
                   <p className="code">
                     Nitrogen is an iOS specs viewer written in Swift.
                   </p>
