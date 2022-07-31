@@ -1,11 +1,12 @@
 import React from 'react';
 import Box from './Box.tsx';
 import './buttons.css';
+import { mirage } from 'ayu';
 
 const windowStyle = {
-	backgroundColor: '#333',
+	backgroundColor: mirage.editor.bg.hex(),
 	borderRadius: 8,
-	color: '#eee',
+	color: mirage.ui.fg.hex(),
 	minHeight: 400,
 	padding: 12,
 	minWidth: 700,
@@ -26,7 +27,9 @@ const Terminal = ({ children }) => {
 				<div className='base-circle close-circle'></div>
 				<div className='base-circle min-circle'></div>
 				<div className='base-circle max-circle'></div>
-				<h1 className="leftAlign">{children}</h1>
+				<br />
+				<br />
+				<p className="leftAlign">{children}</p>
 			</Box>
 		</div >
 	);
