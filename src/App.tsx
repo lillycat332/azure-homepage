@@ -18,14 +18,15 @@ const App = () => {
         //fullpage options
         scrollingSpeed={1000}
         scrollBar={false}
-        easing={"easeInOutCubic"}
+        easing={"easeInOutElastic"}
         navigation={true}
+        css3={true}
 
         render={({ state, fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>
               <div className="section top">
-                <Tilt className="centred" perspective={10000}>
+                <Tilt className="centred" perspective={10000} gyroscope={true}>
                   <Terminal>
                     <Typewriter
                       onInit={(typewriter) => {
