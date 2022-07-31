@@ -8,18 +8,15 @@ const windowStyle = {
 	color: '#eee',
 	minHeight: 400,
 	padding: 12,
-	width: 600,
+	minWidth: 700,
 	marginTop: "5%",
 	boxShadow: `
-  0px 0px 1.3px rgba(0, 0, 0, 0.02),
-  0px 0px 2.9px rgba(0, 0, 0, 0.029),
-  0px 0px 4.8px rgba(0, 0, 0, 0.036),
-  0px 0px 7.3px rgba(0, 0, 0, 0.042),
-  0px 0px 10.7px rgba(0, 0, 0, 0.048),
-  0px 0px 15.7px rgba(0, 0, 0, 0.054),
-  0px 0px 23.8px rgba(0, 0, 0, 0.061),
-  0px 0px 38.8px rgba(0, 0, 0, 0.07),
-  0px 0px 80px rgba(0, 0, 0, 0.09)`,
+  0 1px 1px rgba(0,0,0,0.11), 
+	0 2px 2px rgba(0,0,0,0.11), 
+	0 4px 4px rgba(0,0,0,0.11), 
+	0 8px 8px rgba(0,0,0,0.11), 
+	0 16px 16px rgba(0,0,0,0.11), 
+	0 32px 32px rgba(0,0,0,0.11)`,
 }
 
 const Terminal = ({ children }) => {
