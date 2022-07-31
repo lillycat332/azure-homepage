@@ -7,9 +7,9 @@ const windowStyle = {
 	backgroundColor: mirage.editor.bg.hex(),
 	borderRadius: 8,
 	color: mirage.ui.fg.hex(),
-	minHeight: 400,
+	minHeight: "40vh",
 	padding: 12,
-	minWidth: 700,
+	minWidth: "50vw",
 	marginTop: "5%",
 	boxShadow: `
   0 1px 1px rgba(0,0,0,0.11), 
