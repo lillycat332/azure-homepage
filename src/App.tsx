@@ -8,7 +8,6 @@ import Terminal from './components/Terminal.tsx';
 
 
 const App = () => {
-
   return (
     <div className="App">
       <ReactFullpage
