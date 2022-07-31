@@ -53,3 +53,14 @@
 .code {
   font-family: 'SF Mono', SFMono-Regular, ui-monospace, 'DejaVu Sans Mono', Menlo, 'Cascadia Code', Consolas, monospace;
 }
+
+.centred {
+  height: 100vh; /* Magic here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftAlign {
+  float: left;
+}

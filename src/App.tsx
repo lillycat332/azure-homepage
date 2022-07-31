@@ -3,6 +3,7 @@ import Tilt from 'react-parallax-tilt';
 import ReactFullpage from '@fullpage/react-fullpage';
 import './App.css';
 import Typewriter from 'typewriter-effect';
+import Terminal from './components/Terminal.tsx';
 
 const App = () => {
   return (
@@ -15,8 +16,8 @@ const App = () => {
           return (
             <ReactFullpage.Wrapper>
               <div className="section">
-                <Tilt>
-                  <h1 className="code">
+                <Tilt className="centred" perspective={10000}>
+                  <Terminal>
                     <Typewriter
                       onInit={(typewriter) => {
                         typewriter.typeString("Hello World~")
@@ -29,7 +30,7 @@ const App = () => {
                           .start();
                       }}
                     />
-                  </h1>
+                  </Terminal>
                 </Tilt>
               </div>
               <div className="section">
