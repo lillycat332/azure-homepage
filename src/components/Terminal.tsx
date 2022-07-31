@@ -1,5 +1,5 @@
 import React from 'react';
-import Box from './Box.tsx';
+import Box from './Box';
 import './buttons.css';
 import { mirage } from 'ayu';
 
@@ -20,7 +20,11 @@ const windowStyle = {
 	0 32px 32px rgba(0,0,0,0.11)`,
 }
 
-const Terminal = ({ children }) => {
+type TerminalProps = {
+	children: React.ReactNode
+}
+
+const Terminal: React.FunctionComponent<TerminalProps> = ({ children }) => {
 	return (
 		<div className="code">
 			<Box style={windowStyle}>

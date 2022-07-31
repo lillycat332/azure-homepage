@@ -1,7 +1,14 @@
 import React from 'react';
 
-function Box({ children, ...props }) {
-	return <div {...props}>{children}</div>
+type BoxProps = {
+	children: React.ReactNode
+	style?: React.CSSProperties
+}
+
+const Box: React.FunctionComponent<BoxProps> = ({ children, style, ...props }) => {
+	return (
+		<div style={style} {...props}> {children}</div >
+	);
 }
 
 export default Box;
