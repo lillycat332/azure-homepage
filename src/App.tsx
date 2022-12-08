@@ -3,7 +3,7 @@ import Tilt from 'react-parallax-tilt';
 import ReactFullpage from '@fullpage/react-fullpage';
 import './App.css';
 import Typewriter from 'typewriter-effect';
-import Terminal from './components/Terminal';
+import { Terminal } from 'term.jsx';
 import 'rsuite/dist/rsuite.min.css';
 import { light } from 'ayu';
 
